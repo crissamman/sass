@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+  background-color: black;
+  color: white;
+}
+.nav__container {
+  width: 90%;
+  margin: 0 auto;
+  height: 60px;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav__item {
+  color: white;
+  text-decoration: none;
+}
+.nav__item--active {
+  text-decoration: underline;
+}
+.nav__item:hover {
+  color: black;
+}
+@media (min-width: 700px) {
+  .nav__container {
+    justify-content: flex-end;
+  }
+}
+
+.container {
+  height: calc(100vh - 70px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7294117647), rgba(0, 0, 0, 0.7176470588)), url("../img/programador.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.container__texts {
+  width: 90%;
+  color: white;
+}
+.container__title {
+  font-size: 2rem;
+  margin-bottom: 0.625rem;
+}
+.container__ paragraph {
+  font-size: 1.25rem;
+}
+
+/*# sourceMappingURL=style.css.map */

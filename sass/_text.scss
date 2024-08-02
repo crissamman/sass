@@ -1,0 +1,23 @@
+@use "mixin";
+
+.container {
+  height: calc(100vh - 70px);
+  background-image: linear-gradient(#000000ba, #000000b7), url("../img/programador.jpg");
+
+  @include mixin.crear-displayflex;
+  @include mixin.cover-image;
+
+  &__texts {
+    width: 90%;
+    color: white;
+  }
+
+  &__title {
+    font-size: mixin.pixeles-rem(32);
+    margin-bottom: mixin.pixeles-rem(10);
+  }
+
+  &__ paragraph {
+    font-size: mixin.pixeles-rem(20); ;
+  }
+}

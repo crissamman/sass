@@ -1,0 +1,21 @@
+@use "sass:math";
+
+@mixin crear-displayflex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin cover-image {
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+@function pixeles-rem($pixeles) {
+  // 32/16 = 2*1 rem = 2rem
+  @return math.div($pixeles, 16) * 1rem;
+
+  @return $rem;
+
+}
